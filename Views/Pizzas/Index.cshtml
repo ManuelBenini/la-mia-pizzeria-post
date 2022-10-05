@@ -24,7 +24,7 @@
                     <td>@pizza.Description</td>
                     <td> <img src="@pizza.Image" alt="Immagine della pizza"> </td>
                     <td>@pizza.Price&euro;</td>
-                    <td> <a href="@Url.Action("Show", "Pizzas", new {id = count++})">Go to the detail</a> </td>
+                    <td> <a href="@Url.Action("Show", "Pizzas", new {id = pizza.PizzaId})">Go to the detail</a> </td>
                 </tr>
             }
         }
